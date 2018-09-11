@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{8AB9500B-1473-3BF7-C068-E2B9DBAB7317}|Unit Tests">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BlankFramework/Main/Main.cs">
+    <Files>
+      <File FileName="Assets/BlankFramework/Main/Main.cs" Line="34" Column="1" />
+      <File FileName="Assets/BlankFramework/Framework/Core/Controller/UIViewController.cs" Line="34" Column="34" />
+      <File FileName="Assets/BlankFramework/Framework/Core/Controller/UINavigationController.cs" Line="91" Column="11" />
+      <File FileName="Assets/BlankFramework/Manager/SceneManager.cs" Line="34" Column="26" />
+      <File FileName="Assets/BlankFramework/Common/StartUpCommand.cs" Line="54" Column="3" />
+      <File FileName="Assets/BlankFramework/Libs/Best HTTP (Pro)/BestHTTP/HTTPResponse.cs" Line="5" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
