@@ -75,6 +75,7 @@ namespace BlankFramework
         private void Awake()
         {
             Instance = this;
+            Instance.m_lastTime = Time.time;
             StartTimer(1);
         }
 
@@ -84,7 +85,7 @@ namespace BlankFramework
             m_toRemove = new List<TimerRepeatInfo>();
             m_toAdd = new Dictionary<TimerCallback, TimerRepeatInfo>();
             m_pool = new List<TimerRepeatInfo>(100);
-            m_lastTime = Time.time;
+            //m_lastTime = Time.time;
         }
 
         /// <summary>

@@ -43,9 +43,9 @@ namespace BlankFramework
         {
             //------------------------添加管理器对象-----------------------------
             AppBridgeLink.Instance.AddManager<NetWorkManager>(ManagerName.NET_WORK);
-            AppBridgeLink.Instance.AddManager<MusicManager>(ManagerName.MUSIC);
+            //AppBridgeLink.Instance.AddManager<MusicManager>(ManagerName.MUSIC);
             AppBridgeLink.Instance.AddManager<TimerManager>(ManagerName.TIMER);
-            AppBridgeLink.Instance.AddManager<ImageCacheManager>(ManagerName.IMAGE_CACHE);
+            //AppBridgeLink.Instance.AddManager<ImageCacheManager>(ManagerName.IMAGE_CACHE);
             AppBridgeLink.Instance.AddManager<NotificationManager>(ManagerName.NOTIFICATION);
             AppBridgeLink.Instance.AddManager<CoroutineManager>(ManagerName.COROUTINE);
             AppBridgeLink.Instance.AddManager<SceneManager>(ManagerName.SCENE);
@@ -54,7 +54,7 @@ namespace BlankFramework
 //            AppBridgeLink.Instance.AddManager<DataStatisticsManager>(ManagerName.DATA_STATISTICS);
             AppBridgeLink.Instance.AddManager<AssetBundleManager>(ManagerName.ASSET_BUNDLE);
 //            AppBridgeLink.Instance.AddManager<ImageTargetManager>(ManagerName.IMAGE_TARGET);
-            AppBridgeLink.Instance.AddManager<LanguagePackageManager>(ManagerName.LANGUAGE_PACKAGE);
+            //AppBridgeLink.Instance.AddManager<LanguagePackageManager>(ManagerName.LANGUAGE_PACKAGE);
         }
     }
 }

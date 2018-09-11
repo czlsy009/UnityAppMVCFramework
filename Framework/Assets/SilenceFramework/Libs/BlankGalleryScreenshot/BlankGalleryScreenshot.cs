@@ -113,7 +113,7 @@ public class BlankGalleryScreenshot : MonoBehaviour
     public void SaveGalleryScreenshot(BlankAction finshCallBack)
     {
         StartCoroutine(CaptureScreenshot(finshCallBack));
-        MusicManager.Instance.PlayOneShotAudio(Resources.Load("Audios/photo_graph_effect") as AudioClip);
+        //MusicManager.Instance.PlayOneShotAudio(Resources.Load("Audios/photo_graph_effect") as AudioClip);
     }
 
     private IEnumerator CaptureScreenshot(BlankAction finshCallBack)

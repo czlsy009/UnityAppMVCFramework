@@ -49,7 +49,7 @@ namespace BlankFramework
         /// <summary>
         /// 声音管理器
         /// </summary>
-        private MusicManager m_musicManager;
+        //private MusicManager m_musicManager;
         /// <summary>
         /// 时间管理器
         /// </summary>
@@ -87,17 +87,17 @@ namespace BlankFramework
         /// <summary>
         /// 声音管理器
         /// </summary>
-        protected MusicManager MusicMgr
-        {
-            get
-            {
-                if (m_musicManager == null)
-                {
-                    m_musicManager = AppBridgeLink.Instance.GetManager<MusicManager>(ManagerName.MUSIC);
-                }
-                return m_musicManager;
-            }
-        }
+        //protected MusicManager MusicMgr
+        //{
+        //    get
+        //    {
+        //        if (m_musicManager == null)
+        //        {
+        //            m_musicManager = AppBridgeLink.Instance.GetManager<MusicManager>(ManagerName.MUSIC);
+        //        }
+        //        return m_musicManager;
+        //    }
+        //}
         private AppBridgeLink m_appBridgeLink;
         /// <summary>
         /// 核心框架桥梁

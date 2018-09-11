@@ -31,6 +31,9 @@
 //  * 创建人：Blank Alian
 //  */
 
+using System.Collections.Generic;
+using BestHTTP;
+using LitJson;
 using UnityEngine;
 
 namespace BlankFramework
@@ -73,21 +76,53 @@ namespace BlankFramework
             _isInit = true;
 
 
-           
+
 
         }
 
-        //void OnGUI()
-        //{
-        //    if (GUI.Button(new Rect(0, 200, 150, 150), "Clear"))
-        //    {
-        //        PlayerPrefs.DeleteKey("ParentLockPassword");
-        //        PlayerPrefs.DeleteKey("ParentLockIsLock");
-        //    }
-        //}
+        void OnGUI()
+        {
+            //if (GUI.Button(new Rect(0, 200, 150, 150), "TestNetwork"))
+            //{
+            //    Dictionary<string, string> pas = new Dictionary<string, string>();
+            //    pas.Add("templateId", "1038343388014780418");
+            //    NetWorkManager.Instance.SendPostType("http://java.3plus.ltd:8087/" + "api/template/get",
+            //        (successMessage =>
+            //        {
+            //            HTTPResponse res = (HTTPResponse)successMessage.Body;
+            //            Debug.Log(res.DataAsText);
+            //        }), (errorMessage =>
+            //         {
+
+            //         }), pas);
+            //}
+            //if (GUI.Button(new Rect(0, 500, 150, 150), "TestNetwork"))
+            //{
+            //    Dictionary<string, string> pas = new Dictionary<string, string>();
+            //    pas.Add("name", "name");
+            //    pas.Add("description","des");
+            //    NetWorkManager.Instance.SendPostType("http://java.3plus.ltd:8087/" + "api/template/upload",
+            //        (successMessage =>
+            //        {
+            //            HTTPResponse res = (HTTPResponse)successMessage.Body;
+            //            Debug.Log(JsonMapper.ToObject(res.DataAsText).ToJson());
+            //        }), (errorMessage =>
+            //        {
+
+            //        }), pas,new FileParamModel("json", "C:\\Users\\3plus-9\\AppData\\LocalLow\\ThreePlus\\TemplateTool\\1038343388014780418\\template.json"));
+            //}
+
+            if (GUI.Button(new Rect(0, 500, 150, 150), "TestNetwork"))
+            {
+                startPageUiViewController = new StartPageUIViewController();
+                UIWindow.InitWithRootViewController(startPageUiViewController);
+            }
+        }
+
+        private StartPageUIViewController startPageUiViewController;
         void Start()
         {
-           
+
         }
     }
 }

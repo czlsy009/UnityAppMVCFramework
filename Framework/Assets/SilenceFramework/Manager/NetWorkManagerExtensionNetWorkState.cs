@@ -32,6 +32,7 @@
 //  */
 
 
+using System;
 
 namespace BlankFramework
 {
@@ -75,7 +76,9 @@ namespace BlankFramework
         /// </summary>
         public static bool IsNetAvailable
         {
-            get { return Application.internetReachability != NetworkReachability.NotReachable; }
+            //get { return Application.internetReachability != NetworkReachability.NotReachable; }
+            get;
+            set;
         }
 
         /// <summary>
@@ -83,7 +86,9 @@ namespace BlankFramework
         /// </summary>
         public static bool IsWifi
         {
-            get { return Application.internetReachability == NetworkReachability.ReachableViaLocalAreaNetwork; }
+            //get { return Application.internetReachability == NetworkReachability.ReachableViaLocalAreaNetwork; }
+            get;
+            set;
         }
 
         private bool m_lastNetWorkState = IsNetAvailable;
@@ -96,6 +101,11 @@ namespace BlankFramework
             TimerMgr.AddTimerEvent(m_timerInfo);
         }
 
+        void Update()
+        {
+            IsWifi = Application.internetReachability == NetworkReachability.ReachableViaLocalAreaNetwork;
+            IsNetAvailable = Application.internetReachability != NetworkReachability.NotReachable;
+        }
 
         #region ITimerBehaviour 成员
 
